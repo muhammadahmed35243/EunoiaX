@@ -1,0 +1,10 @@
+.env*
+__pycache__/
+*.pyc
+node_modules/
+dist/
+logs/
+*.log
+.vscode/
+*.ipynb_checkpoints
+coverage/
