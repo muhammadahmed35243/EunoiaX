@@ -1,0 +1,19 @@
+name: 🚀 Basic CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  always-pass:
+    name: ✅ Always Pass Job
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛎️ Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: 👋 Hello World Check
+        run: echo "✅ This check always passes!"
